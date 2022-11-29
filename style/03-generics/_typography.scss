@@ -1,0 +1,38 @@
+body {
+  background-color: $clr-neutral-200;
+  color: $clr-neutral-400;
+  font-family: $ff-default;
+  font-size: $fs-300;
+  line-height: 1.5;
+}
+
+p {
+  font-family: $ff-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: $ff-default;
+  color: $clr-neutral-500;
+  font-weight: $fw-600;
+}
+
+h1 {
+  font-size: $fs-700;
+  letter-spacing: 0.01875rem;
+}
+
+h2,
+h3,
+h4 {
+  font-size: $fs-500;
+}
+
+cite {
+  font-style: normal;
+}

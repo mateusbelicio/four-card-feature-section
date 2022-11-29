@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --clr-primary-red: hsl(0, 78%, 62%);
+  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-orange: hsl(34, 97%, 64%);
+  --clr-primary-blue: hsl(212, 86%, 64%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 98%);
+  --clr-neutral-400: hsl(229, 6%, 66%);
+  --clr-neutral-500: hsl(234, 12%, 34%);
+}
+
+// VARIABLES TO BE USED
+// These variables don't are rendered on the 'index.css'
+
+$clr-primary-1: var(--clr-primary-red);
+$clr-primary-2: var(--clr-primary-cyan);
+$clr-primary-3: var(--clr-primary-orange);
+$clr-primary-4: var(--clr-neutral-blue);
+
+$clr-neutral-100: var(--clr-neutral-100);
+$clr-neutral-200: var(--clr-neutral-200);
+$clr-neutral-400: var(--clr-neutral-400);
+$clr-neutral-500: var(--clr-neutral-500);
