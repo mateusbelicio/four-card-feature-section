@@ -1,0 +1,46 @@
+.features {
+  display: grid;
+  padding-block: 5rem;
+  place-items: center;
+
+  &__title,
+  &__subtitle,
+  &__description {
+    text-align: center;
+  }
+
+  &__title,
+  &__subtitle {
+    @include breakpoint(1110) {
+      font-size: $fs-700;
+    }
+  }
+
+  &__description {
+    margin-block: 1.5rem 4.875rem;
+    max-width: 55ch;
+
+    @include breakpoint(1110) {
+      margin-block: 1.5rem 4rem;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-areas:
+      'area1'
+      'area2'
+      'area3'
+      'area4';
+    gap: 2rem;
+
+    @include breakpoint(1110) {
+      grid-template-areas:
+        '    . area2 .    '
+        'area1 area2 area4'
+        'area1 area3 area4'
+        '    . area3 .    ';
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
