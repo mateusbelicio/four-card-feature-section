@@ -18,7 +18,9 @@
   }
 
   &__title {
+    color: $clr-neutral-500;
     font-size: $fs-500;
+    font-weight: $fw-600;
   }
 
   &__description {

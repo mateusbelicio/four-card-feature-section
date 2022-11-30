@@ -167,7 +167,9 @@ cite {
   top: 0;
 }
 .card__title {
+  color: var(--clr-neutral-500);
   font-size: var(--fs-500);
+  font-weight: var(--fw-semibold);
 }
 .card__description {
   font-size: var(--fs-200);
