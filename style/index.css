@@ -86,11 +86,11 @@ h6 {
   overflow-wrap: break-word;
   font-family: var(--ff-poppins);
   color: var(--clr-neutral-500);
-  font-weight: var(--fw-semibold);
 }
 
 h1 {
   font-size: var(--fs-600);
+  font-weight: var(--fw-light);
   letter-spacing: 0.01875rem;
 }
 
@@ -117,19 +117,26 @@ cite {
 
 .features {
   display: grid;
-  padding-block: 5rem;
   place-items: center;
 }
-.features__title, .features__subtitle, .features__description {
+.features__header {
+  padding-top: 5rem;
+}
+.features__title, .features__description {
   text-align: center;
+  margin-inline: auto;
+}
+.features__title span {
+  display: block;
+  font-weight: var(--fw-semibold);
 }
 @media screen and (min-width: 69.375em) {
-  .features__title, .features__subtitle {
+  .features__title {
     font-size: var(--fs-700);
   }
 }
 .features__description {
-  margin-block: 1.5rem 4.875rem;
+  margin-block: 1.5rem 3rem;
   max-width: 55ch;
 }
 @media screen and (min-width: 69.375em) {
@@ -141,6 +148,7 @@ cite {
   display: grid;
   grid-template-areas: "area1" "area2" "area3" "area4";
   gap: 2rem;
+  padding-bottom: 4rem;
 }
 @media screen and (min-width: 69.375em) {
   .features__cards {

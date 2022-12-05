@@ -1,23 +1,30 @@
 .features {
   display: grid;
-  padding-block: 5rem;
   place-items: center;
 
-  &__title,
-  &__subtitle,
-  &__description {
-    text-align: center;
+  &__header {
+    padding-top: 5rem;
   }
 
   &__title,
-  &__subtitle {
+  &__description {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  &__title {
+    span {
+      display: block;
+      font-weight: $fw-600;
+    }
+
     @include breakpoint(1110) {
       font-size: $fs-700;
     }
   }
 
   &__description {
-    margin-block: 1.5rem 4.875rem;
+    margin-block: 1.5rem 3rem;
     max-width: 55ch;
 
     @include breakpoint(1110) {
@@ -33,6 +40,7 @@
       'area3'
       'area4';
     gap: 2rem;
+    padding-bottom: 4rem;
 
     @include breakpoint(1110) {
       grid-template-areas:
